@@ -1,4 +1,4 @@
-// Source: https://github.com/antfu/eslint-config?tab=readme-ov-file#ide-support-auto-fix-on-save
+// source: https://github.com/antfu/eslint-config?tab=readme-ov-file#ide-support-auto-fix-on-save
 {
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,

@@ -15,7 +15,7 @@ const compat = new FlatCompat({
 export default antfu(
   {
     formatters: true,
-    ignores: ['./demo'],
+    ignores: ['demo/', 'stats.html'],
     lessOpinionated: true,
     // unocss: true,
   },
@@ -25,6 +25,16 @@ export default antfu(
       'curly': ['error', 'all'],
       'no-console': ['warn', { allow: ['info', 'warn', 'error'] }],
       'vue/max-attributes-per-line': ['error', { singleline: 3 }],
+      'vue/max-len': ['error', {
+        code: 160,
+        ignoreComments: true,
+        ignoreHTMLAttributeValues: true,
+        ignoreHTMLTextContents: true,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreUrls: true,
+      }],
       'vue/no-deprecated-v-bind-sync': 'off',
       'vue/no-deprecated-v-on-native-modifier': 'off',
       'vue/no-deprecated-destroyed-lifecycle': 'off',

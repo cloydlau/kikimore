@@ -38,8 +38,7 @@
 ## 安装
 
 ```shell
-# 安装并执行脚本
-npm i faim && npx faim
+npx -y faim
 ```
 
 > [!Warning]
